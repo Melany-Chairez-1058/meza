@@ -1,0 +1,365 @@
+
+body{
+background: linear-gradient(90deg, rgba(194,203,125,1) 0%, rgba(168,154,55,1) 100%);
+}
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ nav{
+ background-color: #d5d19f;
+
+
+
+ }
+
+ .navbar-nav .nav-link {
+  font-family: monospace;
+  color: rgb(247, 245, 243);
+  font-size: 1.5rem; /* Cambiar a 1.5rem para ser más responsivo */
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+
+.navbar-nav img {
+  width: auto;
+  height: 100px; /* Ajustar altura para ser más responsivo */
+}
+
+.bienvenido {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 1rem; /* Reducir tamaño de fuente en pantallas más pequeñas */
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+
+  .navbar-nav img {
+    height: 40px; /* Ajustar altura para pantallas pequeñas */
+  }
+
+  .navbar-nav .btn {
+    margin: 5px 0;
+  }
+}
+
+.foto{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(imagenes/fondo.png);
+  background-size: cover;
+  background-position:  center;
+  z-index: 5;
+  font-size: 800%;
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+  color: #f9f8f4;
+}
+.collage{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}.responsive-image {
+  max-width: 70%;
+  height: auto;
+  display: block;
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas si es necesario */
+  justify-content: center;
+  align-items: center; /* Centra verticalmente los elementos */
+  background: linear-gradient(90deg, rgba(194,203,125,1) 0%, rgba(168,154,55,1) 100%);
+  padding: 20px;
+  gap: 20px; /* Espaciado uniforme entre los elementos */
+}
+
+.flex-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 40%; /* Bordes redondeados */
+  padding: 20px; /* Reduce el padding para dispositivos pequeños */
+  box-sizing: border-box; /* Asegura que el padding no desborde el contenedor */
+}
+
+.flex-container > div {
+  background-color: #cdcb93;
+  width: calc(100% - 40px); /* Ocupa todo el ancho menos márgenes en dispositivos pequeños */
+  max-width: 500px; /* Ancho máximo para dispositivos más grandes */
+  margin: 5px;
+  text-align: center;
+  font-size: 20px; /* Fuente más pequeña para pantallas pequeñas */
+  border-radius: 20%; /* Reduce la curvatura para pantallas pequeñas */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .flex-container > div {
+    width: 45%; /* Ocupa la mitad del espacio en pantallas medianas */
+    font-size: 25px;
+    border-radius: 30%; /* Ajuste de bordes para pantallas medianas */
+  }
+}
+
+@media (min-width: 1024px) {
+  .flex-container img {
+    max-width: 400px; /* Tamaño original para pantallas grandes */
+    height: auto;
+  }
+
+  .flex-container > div {
+    width: 30%; /* Ocupa menos espacio en pantallas grandes */
+    font-size: 30px;
+    border-radius: 45%; /* Bordes originales */
+  }
+}
+
+
+.pie-pagina {
+  background-color: #b9c77c;
+
+   color: white;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.pie-pagina .grupo-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.pie-pagina .box {
+  flex: 1;
+  padding: 10px;
+}
+
+.pie-pagina .box img {
+  height: 80%;
+  width: auto;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.pie-pagina .grupo-2 {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .pie-pagina .grupo-1 {
+    flex-direction: column;
+  }
+
+  .pie-pagina .box {
+    margin-bottom: 20px;
+  }
+}
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 70vw;
+  flex-wrap: wrap;
+}
+
+.ss {
+  text-align: center;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: rgba(166, 150, 97, 0.868);
+  padding: 10px;
+  transition: 0.2s;
+  max-width: 30%;
+  min-width: 30%;
+  border-radius: 50%;
+  min-height: 20vw;
+ 
+}
+
+.ss:hover {
+  background-color: rgb(117, 142, 90);
+  transform: scale(1.1);
+  border-radius: 50%;
+}
+
+.ss .imagen-p {
+  width: 80%;
+  height: auto;
+}
+
+.ss .desc {
+  font-size: 12px;
+}
+
+.ss .boton-cart {
+  background-color: #4b653c;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.ss .boton-cart:hover {
+  color: #333230;
+  background-color: #74976b;
+}
+
+.ss .id-p {
+  display: none;
+}
+
+.bienvenido {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(27, 16, 73);
+}
+
+.btn {
+  width: 100%;
+  background-color: #333;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+@media (max-width: 1200px) {
+  .ss {
+      max-width: 45%;
+      min-width: 45%;
+  }
+}
+
+@media (max-width: 992px) {
+  .productos {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .ss {
+      max-width: 70%;
+      min-width: 70%;
+  }
+
+  .ss .imagen-p {
+      width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ss {
+      max-width: 80%;
+      min-width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .ss {
+      max-width: 100%;
+      min-width: 100%;
+      padding: 5px;
+  }
+
+  .btn {
+      font-size: 14px;
+  }
+
+  .ss .desc {
+      font-size: 10px;
+  }
+
+  .ss .boton-cart {
+      padding: 3px 7px;
+  }
+}
+
+.yo {
+  width: 400px;
+  height: 400px;
+  border-radius: 60%;
+  overflow: hidden;
+  background-image: url('imagenes/yofaldab.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.info {
+  margin: 0 auto;
+  width: 500px;
+  background-image: linear-gradient(#6e8724, rgba(129, 155, 11, 0.542));
+  color: #000000;
+  font-size: 30px;
+  box-shadow: 5px 5px 5px rgb(153, 146, 3);
+  text-align: center;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.separator {
+  position: relative;
+  text-align: center; /* Centra el texto horizontalmente */
+  margin: 20px auto; /* Añade espacio alrededor */
+  max-width: 600px; /* Tamaño máximo del separador */
+}
+
+.separator img {
+  width: 100%; /* Imagen responsiva */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+.separator-text {
+  position: absolute;
+  top: 50%; /* Centrado vertical */
+  left: 50%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Ajusta el punto de origen */
+  color: white; /* Color del texto */
+  font-size: 24px; /* Tamaño del texto */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para legibilidad */
+  font-family: Arial, sans-serif;
+}
